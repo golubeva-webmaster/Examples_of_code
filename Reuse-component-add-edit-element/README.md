@@ -13,6 +13,7 @@
       />
       
 А вызывается дочерний так:
+    
     <v-btn
         small
         :title="$t('Common.Add')"
