@@ -36,4 +36,5 @@
     </v-btn>
     
 Открытие-закрытие диалогового окна дочернего компонента осуществляется внутри родителя:
-    this.roleEditDialog = true
+    
+     this.roleEditDialog = true
