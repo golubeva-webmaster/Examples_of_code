@@ -12,3 +12,28 @@
         :element.sync="newRole"
       />
       
+А вызывается дочерний так:
+    <v-btn
+        small
+        :title="$t('Common.Add')"
+        color="primary"
+        depressed
+        fab
+        class="mt-4"
+        @click="addRole"
+      >
+        <v-icon>mdi-plus</v-icon>
+    </v-btn>
+      
+      
+      <v-btn
+      icon
+      color="primary"
+      :title="$t('Common.Update')"
+      @click="editRole(item)"
+      >
+      <v-icon small> mdi-pencil </v-icon>
+    </v-btn>
+    
+Открытие-закрытие диалогового окна дочернего компонента осуществляется внутри родителя:
+    this.roleEditDialog = true
