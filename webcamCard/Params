@@ -1,0 +1,12 @@
+# Params
+
+  get camSettings () {
+    return this.$store.state.gui.webcam;
+  }
+  get lightColor () {
+    return this.$store.getters['printer/getLedColor']
+  }
+  lightControl (options: any, params: any) {
+    this.$store.dispatch('server/addEvent', params)
+    this.$socket.emit('printer.gcode.script', options)
+  }
